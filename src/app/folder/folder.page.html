@@ -3,7 +3,6 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>{{ folder }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -15,7 +14,32 @@
   </ion-header>
 
   <div id="container">
-    <strong class="capitalize">{{ folder }}</strong>
-    <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <ion-title id="title">General settings</ion-title>
+    <div id="setting">
+      <div>
+        <ion-label id="setting-lable">Choose Button background Color</ion-label>
+        <ion-select class="custom-select" aria-label="fruit" placeholder="Select Color" interface="popover"
+          label-placement="floating">
+          <img src="../../assets/icon/favicon.png" slot="start" alt="">
+          <ion-select-option *ngFor="let food of foods" [value]="food">{{ food.name }}</ion-select-option>
+        </ion-select>
+      </div>
+      <div>
+        <ion-label id="setting-lable">Choose Button Border Color</ion-label>
+        <ion-select class="custom-select" aria-label="fruit" placeholder="Select Color" interface="popover"
+          label-placement="floating">
+          <img src="../../assets/icon/green.png" slot="start" alt="">
+          <ion-select-option *ngFor="let food of foods" [value]="food">{{ food.name }}</ion-select-option>
+        </ion-select>
+      </div>
+      <div>
+        <ion-label id="setting-lable">Choose Button Shape</ion-label>
+        <ion-select class="custom-select" aria-label="fruit" placeholder="Select fruit" interface="popover"
+          label-placement="floating">
+          <img src="../../assets/icon/favicon.png" slot="start" alt="">
+          <ion-select-option *ngFor="let food of foods" [value]="food">{{ food.name }}</ion-select-option>
+        </ion-select>
+      </div>
+    </div>
   </div>
 </ion-content>

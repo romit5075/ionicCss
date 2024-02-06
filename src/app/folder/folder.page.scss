@@ -3,12 +3,40 @@ ion-menu-button {
 }
 
 #container {
-  text-align: center;
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  padding: 2rem;
+}
+
+#setting {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  border: 1.5px solid #52d33c;
+  border-radius: 11px;
+  padding: 2.5rem;
+}
+
+ion-select {}
+
+
+#setting-lable {
+  font-size: 1.2rem;
+}
+
+
+ion-label {
+  font-size: 1rem;
+  padding: 0 0 1rem 0;
+
+}
+
+#title {
+  font-size: 2rem;
+  padding: 0 0 1rem 0;
+}
+
+ion-title {
+  font-size: 1rem;
 }
 
 #container strong {
@@ -25,4 +53,38 @@ ion-menu-button {
 
 #container a {
   text-decoration: none;
+}
+
+.custom-select {
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  color: #333;
+  width: 20rem;
+  margin: .8rem 0 1rem 0;
+  padding: .5rem 1rem .5rem 1rem;
+  border: none;
+  border-radius: 1rem;
+}
+
+.custom-select::part(icon) {
+  color: rgb(51, 214, 42);
+  // padding-left: 11rem;
+  font-size: large;
+
+}
+
+.custom-select::part(placeholder) {
+  color: #000000;
+  font-size: medium;
+}
+
+
+.shadow-root-style::part(text) {
+  text-decoration: none;
+
+}
+
+img {
+  width: 25px;
 }
